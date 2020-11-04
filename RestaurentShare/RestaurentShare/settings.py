@@ -25,8 +25,15 @@ SECRET_KEY = '*(&8*2iueb!ar%w$0+-rx%e3)c@-xw!rt2w#s427r-n=(7o)e('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ ]
+ALLOWED_HOSTS = [ "gostbaducking1.pythonanywhere.com","127.0.0.1", "localhost" ]
 
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'gostbaducking0@gmail.com'
+EMAIL_HOST_PASSWORD = '비밀'
 
 # Application definition
 

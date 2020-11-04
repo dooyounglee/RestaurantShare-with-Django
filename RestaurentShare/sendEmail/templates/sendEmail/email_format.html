@@ -1,0 +1,12 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>맛집 공유</h1>
+	<p>{{inputContent}}<br>
+	{% for restaurant in restaurants %}
+	<h2>{{restaurant.restaurant_name}}</h2>
+	{% endfor %}
+</body>
+</html>
